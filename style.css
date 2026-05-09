@@ -1,0 +1,39 @@
+/* --- KODE CSS UTAMA (Untuk Desktop/Layar Lebar) --- */
+:root {
+    --primary: #2563eb;
+   
+}
+
+.login-card {
+    padding: 50px 40px;
+    border-radius: 24px;
+   
+}
+
+/* --- KODE RESPONSIVITAS (Untuk HP) --- */
+/* Letakkan ini di bagian paling bawah file style.css */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 15px;
+    }
+
+    .login-card {
+        padding: 35px 25px;
+        border-radius: 20px;
+    }
+
+    .input-group {
+        flex-direction: column; /* Mengubah label ke atas, input ke bawah */
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .input-group label {
+        flex: none;
+        width: 100%;
+    }
+
+    #password-message {
+        margin-left: 0; /* Meratakan pesan error ke kiri pada layar HP */
+    }
+}
